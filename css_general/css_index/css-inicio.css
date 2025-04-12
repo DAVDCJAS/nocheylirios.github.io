@@ -12,7 +12,7 @@
     font-family: Textos;
 }
 header{
-    background-image: url(/imgs_general/imgs_index/HEADER.png);
+    background-image: url(../../imgs_general/imgs_index/HEADER.png);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,7 @@ header{
 }
 section{
     height: auto;
-    background-image: url(/imgs_general/imgs_index/Background-index.png);
+    background-image: url(../../imgs_general/imgs_index/Background-index.png);
     background-size: auto;
     align-items: center;
     margin: auto;
@@ -95,7 +95,7 @@ h2{
     
 }
 footer{
-    background-image: url(/imgs_general/imgs_index/HEADER.png); 
+    background-image: url(../../imgs_general/imgs_index/HEADER.png); 
     padding: 20px;
     text-align: center;
 }
