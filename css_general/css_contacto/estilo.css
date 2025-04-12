@@ -43,7 +43,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/imgs/Background-index.png);
+  background-image: url(../../imgs/Background-index.png);
   background-color: white;
   padding: 2rem;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.305);
@@ -90,7 +90,7 @@
 
   /* Footer */
   footer{
-    background-image: url('img/HEADER.png');
+    background-image: url(../../img/HEADER.png);
     padding: 20px;
     text-align: center;
 }
