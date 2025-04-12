@@ -1,0 +1,69 @@
+footer{
+    background-image: url(/imgs_general/imgs_reservacion/HEADER.png);
+    padding: 20px;
+    text-align: center;
+}
+footer h2{
+    font-family: textos;
+}
+.container-footer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-footer{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.logo{
+    max-width: 12rem;
+}
+.navlist{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+ 
+}
+.navlist a{
+    text-decoration: none;
+    color: black;
+    font-family: Titulos;
+    font-size: 1.5rem;
+}
+.close, .open{
+    display: none;
+}
+html, body {
+    overflow-x: hidden;
+}
+@media screen and (min-width: 768px){
+    footer{
+        background-color: #A3AB80;
+        padding: 20px;
+        text-align: center;
+    }
+    footer h2{
+        font-family: textos;
+    }
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        gap: 40px; 
+        flex-wrap: wrap;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-footer{
+        font-size: 70px;
+        margin-bottom: 5px;
+    }
+}

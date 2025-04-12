@@ -1,0 +1,102 @@
+header{
+    background-image: url(/imgs_general/imgs_menu/HEADER.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #A3AB80;
+}
+    .open,.close{
+        display: block;
+        font-size: 2rem;
+        border: 0;
+        background-color: rgba(240, 248, 255, 0);
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        background-color: white;
+    }
+    p{
+        font-size: 1.05rem;
+    }
+    h2{
+        font-family: titulos;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .nav {
+        width: 100%;
+        transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../imgs/Background-index.png);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.305);
+        z-index: 1000;
+    }
+    
+    .nav-visible {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    .navlist{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .navlist a{
+        font-size: 2rem;
+        
+    }
+    .icon-footer{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    @media (min-width: 768px) {
+        .open, .close {
+            display: none;
+        }
+    
+        .nav {
+            position: static;
+            transform: none;
+            opacity: 1;
+            visibility: visible;
+            background-color: transparent;
+            background-image: none;
+            box-shadow: none;
+            width: 100%;
+            padding: 0;
+            flex-direction: row;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;
+        }
+    
+        .navlist {
+            flex-direction: row;
+            gap: 2rem;
+        }
+    
+        .navlist a {
+            font-size: 1rem;
+            color: black;
+            text-decoration: none;
+            font-family: "Viaoda Libre", serif;
+            
+        }
+    }
+    

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Noche Y Lirios</title>
+    <link rel="stylesheet" href="css_general/css_contacto/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <img src="imgs_general/imgs_reservacion/noche&liriosmayuss.svg" alt="" class="logo">
+ 
+        <button class="open" id="abrir"><i class="bi bi-list"></i></button>
+ 
+        <nav class="nav" id="nav">
+            <button class="close" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <ul class="navlist">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="pag_reservas.html">Reservaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="container-form">
+        <form class="formulario" >
+        <label for="nombre">Nombre</label> <br> <br>
+
+        <input type="text" id="nombre" placeholder="Escriba su nombre" required > <br> <br>
+ 
+        <label for="correo">Correo</label> <br> <br>
+
+        <input type="email" id="correo" size="64" maxlength="64" required placeholder="username@example.com"> <br> <br>
+
+        <textarea name="User_menssage" id="msg" rows="15" cols="120" required placeholder="Escriba su mensaje"></textarea> <br> <br>
+
+        <button id="abrirPop">Enviar Mensaje</button>
+
+        <div class="Pop" id="Pop">
+            <div class="PopInter">
+                <h2>Muchas Gracias</h2>
+                <p>
+                    Esperamos poder revisar su mensaje muy pronto
+                </p>
+                <button id="cerrarPop"></button>
+            </div>
+        </div>
+
+        </form>
+    </div>
+    <script src="java_general/java_TODO/index-script.js"></script>
+    <script src="java_general/java_contacto/Enviar.js"></script>
+</body> <br> <br>
+<footer>
+    <div class="container-footer">
+        <div class="redes">
+            
+            <div class="icon-footer"><i class="bi bi-instagram"></i></div>
+            <h3>@Noche_Y_Lirios</h3>
+        </div>
+
+        <div class="redes">
+            
+            <div class="icon-footer"><i class="bi bi-envelope-at"></i></div>
+            <h3>nocheylirio@yopmail.com</h3>
+        </div>
+        <div class="redes">
+            
+            <div class="icon-footer"><i class="bi bi-telephone"></i></div>
+            <h3>Tel. (656)123-4567</h3>
+        </div>
+    </div>
+</footer>
+</html>

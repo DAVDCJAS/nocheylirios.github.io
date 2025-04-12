@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: titulos;
+    src: url(fonts/ViaodaLibre-Regular.ttf);
+}
+@font-face {
+    font-family: textos;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+h1{
+    font-family: titulos;
+}
+h4{
+    font-family: textos;
+}
+
+
+/*Header y su contenido*/
+header{
+    background-image: url(/imgs_general/imgs_menu/HEADER.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #A3AB80;
+}
+/* Footer */
+footer{
+    background-image: url(/imgs_general/imgs_menu/HEADER.png);
+    padding: 20px;
+    text-align: center;
+}
+footer h2{
+    font-family: textos;
+}
+.container-footer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-footer{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.logo{
+    max-width: 12rem;
+}
+.navlist{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+ 
+}
+.navlist a{
+    text-decoration: none;
+    color: black;
+    font-family: Titulos;
+    font-size: 1.5rem;
+}
+.close, .open{
+    display: none;
+}
+html, body {
+    overflow-x: hidden;
+}
+/* Cuerpo */
+section {
+    background-image: url(/imgs_general/imgs_menu/fondo.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.crepas {
+    width: 30%;
+    min-width: 280px;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.foto {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.texto {
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #734e39;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    transition: .3s;
+}
+
+.texto:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.671);
+}
+
+.titulo {
+    color: #E7DCC7;
+}
+
+.info,
+.infocafe {
+    color: #E7DCC7;
+    margin-top: 10px;
+    
+}
+
+.infocafe {
+    width: 48%;
+    float: left;
+    border: #E7DCC7 1px solid;
+    
+}
+
+.deco {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+/*  MEDIA QUERIES */
+
+
+@media screen and (max-width: 1024px) {
+    .crepas {
+        width: 45%;
+    }
+
+    .icon-footer {
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+  
+
+    .logo img,
+    .hamburguesa img {
+        height: 60px;
+    }
+
+    .crepas {
+        width: 80%;
+    }
+
+    .icon-footer {
+        font-size: 40px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .crepas {
+        width: 95%;
+    }
+
+    .icon-footer {
+        font-size: 30px;
+    }
+
+    footer h2 {
+        font-size: 16px;
+    }
+
+    .infocafe {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    .open,.close{
+        display: block;
+        font-size: 2rem;
+        border: 0;
+        background-color: rgba(240, 248, 255, 0);
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+    p{
+        font-size: 1.05rem;
+    }
+    h2{
+        font-family: titulos;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .nav {
+        width: 60%;
+        transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #E7DCC7;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.305);
+        z-index: 1000;
+    }
+    
+    .nav-visible {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    .navlist{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .navlist a{
+        font-size: 2rem;
+        
+    }
+    .icon-footer{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+}

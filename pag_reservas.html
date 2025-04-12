@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_general/css_reservaciones/estilo.css">
+    <link rel="stylesheet" href="css_general/css_reservaciones/estilo_footer.css">
+    <link rel="stylesheet" href="css_general/css_reservaciones/esilo_header.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        
+        <img src="imgs_general/imgs_reservacion/noche&liriosmayuss.svg" alt="" class="logo">
+ 
+        <button class="open" id="abrir"><i class="bi bi-list"></i></button>
+ 
+        <nav class="nav" id="nav">
+            <button class="close" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <ul class="navlist">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="pag_reservas.html">Reservaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <nav>
+    </nav>
+    <main>
+        <section id="reservaciones">
+            <div class="image-container">
+                <img src="imgs_general/imgs_reservacion/Reservaciones.png" alt="Imagen Responsiva">
+              </div>
+        </section>
+        <section id="reservas">
+            <section id="forms">
+                <div class="form1">
+                    <h3>
+                        Comensales
+                    </h3>
+                    <select typ="value" id="comensales">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form2">
+                    <h3>
+                        Hora
+                    </h3>
+                    <input type="time" id="hora-cena" value="13:30" />
+                </div>
+                <div class="form3">
+                    <h3>
+                        Día de reservación
+                    </h3>
+                    <input type="date" id="dia-cena">
+                    </label>
+                </div>
+            </section>
+
+        </section>
+        </section>
+        <section id="confirmar">
+            <section id="btn">
+                <input type="submit" value="Reservar">
+            </section>
+        </section>
+        <section id="mensaje">
+            <div class="msj">
+                <p><b>*Aviso:</b> <br>SU CENA QUEDARÁ RESERVADA Y SÓLO TENDRÁ 10 MINUTOS DE ESPERA,
+                    <br>SINO, LA MESA SERÁ OCUPADA POR OTRO
+                    COMENSAL.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="redes">
+
+                <div class="icon-footer"><i class="bi bi-instagram"></i></div>
+                <h3>@Noche_Y_Lirios</h3>
+            </div>
+
+            <div class="redes">
+
+                <div class="icon-footer"><i class="bi bi-envelope-at"></i></div>
+                <h3>nocheylirio@yopmail.com</h3>
+            </div>
+            <div class="redes">
+
+                <div class="icon-footer"><i class="bi bi-telephone"></i></div>
+                <h3>Tel. (656)123-4567</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="java_general/java_TODO/index-script.js"></script>
+</body>
+
+</html>

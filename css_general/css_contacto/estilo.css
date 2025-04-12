@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ /* Seccion de header */
+ header {
+  background-image: url(/imgs_general/imgs_menu/HEADER.png);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #A3AB80;
+}
+
+.logo {
+  max-width: 12rem;
+}
+
+.open, .close {
+  display: block;
+  font-size: 2rem;
+  border: 0;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.nav {
+  width: 100%;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/imgs/Background-index.png);
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.305);
+  z-index: 1000;
+}
+
+.nav-visible {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: black;
+  font-family: Titulos;
+  font-size: 1.5rem;
+}
+/* Seccion Body y Container */
+  body{
+    background-color: #E7DCC7;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    /*background-image: url('img/fondo.jpg');
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten; */
+    
+  }
+  .container-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+  footer{
+    background-image: url('img/HEADER.png');
+    padding: 20px;
+    text-align: center;
+}
+footer h2{
+    font-family: textos;
+}
+.container-footer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-footer{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.logo{
+    max-width: 12rem;
+}
+
+/*Menu hamburguesa */
+
+.close, .open{
+  display: none;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+/* Seccion de formato Form */
+button{
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 10px 25px;
+}
+button:active{
+  opacity: 0.8;
+}
+.Pop{
+  position: fixed;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abrirPop{
+  opacity: 1;
+  z-index: 999;
+}
+.PopInter{
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 15px 25px;
+  text-align: center;
+  width: 380px;
+}
+.PopInter h2{
+  margin: 0;
+}
+.PopInter p{
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+  form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 15px;
+  }
+  label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 18px sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 150px;
+
+    width: 500px;
+  }
+
+  @media  screen and (max-width: 480px) {
+    .open,.close{
+        display: block;
+        font-size: 2rem;
+        border: 0;
+        background-color: rgba(240, 248, 255, 0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .nav {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .navlist {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .navlist a {
+        font-size: 1.2rem;
+    }
+
+    .open,
+    .close {
+        display: none;
+    }
+}
